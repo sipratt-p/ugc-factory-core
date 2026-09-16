@@ -1,0 +1,28 @@
+{
+    "name": "Health Education",
+    "product": "custom",
+    "tone": "educational",
+    "variables": ["supplement", "benefit", "condition"],
+    "scenes": [
+        {
+            "visual": "A young woman content creator at a modern desk with ring light, cozy studio, speaking to camera with excitement",
+            "speech": "Hey everyone, today we need to talk about {{supplement}}. This is something most people are getting wrong."
+        },
+        {
+            "visual": "Same woman at desk, leaning forward, gesturing with enthusiasm, warm lighting",
+            "speech": "So here is the thing about {{supplement}}. Research shows it can really help with {{condition}}."
+        },
+        {
+            "visual": "Same woman at desk, counting on fingers, speaking with authority and confidence",
+            "speech": "The main benefit is {{benefit}}. I have seen incredible results in just a few weeks of consistent use."
+        },
+        {
+            "visual": "Same woman at desk, holding up a product, genuine smile, natural gestures",
+            "speech": "I personally take this every single day and the difference has been night and day for me."
+        },
+        {
+            "visual": "Same woman at desk, leaning toward camera, warm smile, call to action energy",
+            "speech": "If you want to learn more about {{supplement}}, follow for more health tips. See you next time!"
+        }
+    ]
+}

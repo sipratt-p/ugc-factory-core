@@ -1,0 +1,7 @@
+{
+  "name": "Example Persona",
+  "description": "Educational content creator, clear and engaging, expert vibe",
+  "face_ref": "reference.jpg",
+  "voice_ref": "reference.wav",
+  "style_prompt": "A knowledgeable presenter at a desk with a bookshelf behind them, bright studio lighting, speaking to camera with clarity and warmth"
+}

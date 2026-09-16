@@ -1,0 +1,20 @@
+{
+    "name": "Recruiting Pitch",
+    "product": "custom",
+    "tone": "professional",
+    "variables": ["role", "company", "perk"],
+    "scenes": [
+        {
+            "visual": "A professional person at a clean corporate-casual desk, speaking to camera with warmth and authority",
+            "speech": "We are hiring a {{role}} and I want to tell you why this is an incredible opportunity."
+        },
+        {
+            "visual": "Same person at desk, gesturing naturally, confident and approachable expression",
+            "speech": "At {{company}}, we believe in {{perk}}. Our team is growing fast and we need great people."
+        },
+        {
+            "visual": "Same person at desk, leaning forward with genuine enthusiasm",
+            "speech": "If you are a {{role}} looking for your next move, drop a comment or check the link in bio."
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Product Demo",
+    "product": "custom",
+    "tone": "promotional",
+    "variables": ["product_name", "key_feature", "target_audience"],
+    "scenes": [
+        {
+            "visual": "A young content creator at a clean modern desk, laptop visible, speaking to camera with energy",
+            "speech": "Stop scrolling! If you are a {{target_audience}}, you need to know about {{product_name}}."
+        },
+        {
+            "visual": "Same person at desk, pointing at screen, animated expression, warm studio lighting",
+            "speech": "The best part is {{key_feature}}. It literally takes five minutes to set up and start seeing results."
+        },
+        {
+            "visual": "Same person at desk, showing results on screen, genuinely impressed expression",
+            "speech": "Look at these results. This is what happened after just one week of using {{product_name}}."
+        },
+        {
+            "visual": "Same person at desk, leaning toward camera, urgent but friendly energy",
+            "speech": "Seriously, every {{target_audience}} needs this tool. Link in bio to try {{product_name}} free."
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+# ugc-factory-core Python dependencies.
+# Versions are intentionally unpinned; the pipeline ran on Python 3.12 with a
+# CUDA build of PyTorch. Models and repos that are not pip packages (LTX-2.3,
+# ID-LoRA, SyncNet weights + syncnet_python, NISQA) are listed in the README
+# under "Requirements and external dependencies".
+
+# Core: generation wrapper, gates, scoring
+torch
+torchvision
+numpy
+scipy
+opencv-python
+soundfile
+Pillow
+requests
+pyyaml
+huggingface_hub
+python_speech_features
+insightface
+onnxruntime-gpu
+lpips
+speechbrain
+pandas
+
+# Transcription fallbacks (a WHISPER_URL server is preferred; see README)
+openai-whisper
+whisperx
+faster-whisper
+
+# Subtitles (run.py path)
+pysubs2
+
+# Optional: scene-bible description and script generation
+anthropic
+edge-tts
+
+# Optional: extra scorers used by rescore_all.py and factory/score_advanced.py
+pyiqa
+laion-clap
+
+# Optional: TTS path in factory/tts_engine.py
+chatterbox-tts

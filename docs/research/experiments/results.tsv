@@ -1,0 +1,23 @@
+date	test_id	name	resolution	duration_s	gen_time_s	id_guidance	lora_s1	video_rescale	audio_guidance	quantize	visual_score	status	description
+2026-04-04	0a4628b0	baseline_best	960x1728	6.4	236	2.0	0.25	0.45	7.0	false	7.6	keep	Current best: full precision 480x864
+2026-04-04	c58e8305	id_guidance_1.0	960x1728	6.4	236	1.0	0.25	0.45	7.0	false	8.0	keep	Better teeth, more expressive
+2026-04-04	89bd79ef	id_guidance_1.5	960x1728	6.4	236	1.5	0.25	0.45	7.0	false	8.0	keep	Best balance teeth + stability
+2026-04-04	709fe5f8	id_guidance_3.0	960x1728	6.4	236	3.0	0.25	0.45	7.0	false	7.4	discard	Too flat, lifeless expressions
+2026-04-04	8e3333f9	lora_0.1_0.3	960x1728	6.4	235	2.0	0.10	0.45	7.0	false	8.0	keep	Cleanest natural skin texture
+2026-04-04	bf047c40	lora_0.5_0.6	960x1728	6.4	236	2.0	0.50	0.45	7.0	false	7.0	discard	Too heavy, flat skin
+2026-04-04	6d55d228	res_576x320	640x1152	6.4	111	2.0	0.25	0.45	7.0	false	6.5	discard	Noticeably softer
+2026-04-04	dda16d82	res_704x384	768x1408	6.4	152	2.0	0.25	0.45	7.0	false	7.2	keep	Decent middle ground
+2026-04-04	94dc436b	frames_121	960x1728	4.8	178	2.0	0.25	0.45	7.0	false	7.8	keep	Sharpest per-frame, speech too fast
+2026-04-04	7204e896	frames_201	960x1728	8.0	303	2.0	0.25	0.45	7.0	false	7.2	keep	Slight quality drop, better pacing
+2026-04-04	8e66dc7b	audio_guidance_3.0	960x1728	6.4	236	2.0	0.25	0.45	3.0	false	7.4	discard	Weaker lip-sync
+2026-04-04	3f0344c0	audio_guidance_5.0	960x1728	6.4	236	2.0	0.25	0.45	5.0	false	7.6	keep	Moderate lip-sync
+2026-04-04	bba97f4e	recruiting_30s	960x1728	19.3	707	2.0	0.25	0.45	7.0	false	7.0	keep	3-clip hard cut, quality holds
+2026-04-04	dce93ff5	recruiting_60s	960x1728	38.7	1415	2.0	0.25	0.45	7.0	false	5.0	discard	6-clip, severe degradation clips 5-6
+2026-04-04	31547412	id_guidance_0.5	960x1728	6.4	236	0.5	0.25	0.45	7.0	false	6.6	discard	Too unstable, mouth distortion
+2026-04-04	a57f9c1c	video_rescale_0.3	960x1728	6.4	235	2.0	0.25	0.30	7.0	false	6.8	discard	Teeth distortion
+2026-04-04	a0a4d1ee	video_rescale_0.6	960x1728	6.4	235	2.0	0.25	0.60	7.0	false	6.8	discard	Similar distortion
+2026-04-04	62615467	health_30s	960x1728	19.3	707	2.0	0.25	0.45	7.0	false	7.0	keep	health 3-clip ad
+2026-04-04	fdcf9fc7	health_60s	960x1728	38.7	1414	2.0	0.25	0.45	7.0	false	5.0	discard	Same 6-clip degradation
+2026-04-04	65056d16	seo_30s	960x1728	19.3	707	2.0	0.25	0.45	7.0	false	7.0	keep	SEO 3-clip ad
+2026-04-04	93f2d502	recruiting_30s_longer	960x1728	16.1	607	2.0	0.25	0.45	7.0	false	8.0	keep	2-clip 201fr, fewer seams
+2026-04-04	4070cf1a	combo_best	960x1728	6.4	235	2.0	0.25	0.45	7.0	false	7.6	keep	Predicted best combo

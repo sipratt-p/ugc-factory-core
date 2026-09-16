@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments and secrets
+.env
+*.env.local
+.venv*/
+venv/
+**/api_keys*
+**/credentials*
+**/secrets*
+
+# Generated outputs and scratch
+outputs/
+temp/
+uploads/
+*.db
+*.db-wal
+*.db-shm
+*.log
+
+# Persona assets, voice references, music: never commit media
+personas/
+music/
+voice_samples/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# Model weights and partial downloads
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.tmp
+*.model
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

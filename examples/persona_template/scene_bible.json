@@ -1,0 +1,22 @@
+{
+  "character_name": "Example Persona",
+  "character_description": "a person with short dark hair and a friendly expression",
+  "wardrobe": "plain navy crew-neck sweater",
+  "hair": "short dark hair",
+  "distinguishing_features": "",
+  "location": "home office",
+  "location_details": "bookshelf and a desk lamp behind the speaker",
+  "lighting": "soft natural window lighting",
+  "background": "bookshelf, warm desk lamp",
+  "props": [],
+  "camera_angle": "Head-and-shoulders close-up",
+  "camera_movement": "fixed camera, clean composition, subtle eye blinks, slight natural head motion",
+  "framing": "",
+  "voice_description": "close mic",
+  "speaking_pace": "measured pace",
+  "emotional_band": "",
+  "room_tone": "dry room, neutral studio ambience",
+  "target_wps": 2.5,
+  "reference_image": "",
+  "reference_audio": ""
+}
