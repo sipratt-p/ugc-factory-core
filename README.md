@@ -199,6 +199,13 @@ nisqa_ecapa_scores.json     aggregate NISQA + ECAPA scores for nine early experi
 
 Known rough edges: `factory/script_generator.py::generate_from_template` passes a `sounds` field that `ScriptScene` no longer accepts (the web UI had its own template path); `factory/quality_gate.py` declares LSE thresholds that the label-based decision does not read directly.
 
+## Credits
+
+The SyncNet scoring in `factory/score_sync.py` adapts code from [syncnet_python](https://github.com/joonson/syncnet_python)
+by Joon Son Chung (MIT; notice in `LICENSE-thirdparty`). SyncNet is from Chung and Zisserman, "Out of time: automated lip
+sync in the wild" (2016); the LSE-D and LSE-C metrics follow Wav2Lip (Prajwal et al., 2020).
+
 ## License
 
-MIT, see `LICENSE`.
+MIT, see `LICENSE`, except the adapted SyncNet code in `factory/score_sync.py`, which keeps its MIT notice in
+`LICENSE-thirdparty`.

@@ -1,3 +1,7 @@
+# The LSE-D / LSE-C computation in score_syncnet_fast() and the face-crop logic in _crop_face_for_syncnet()
+# and _smooth_bboxes() are adapted from syncnet_python by Joon Son Chung
+# (https://github.com/joonson/syncnet_python), MIT, Copyright (c) 2016-present Joon Son Chung.
+# See LICENSE-thirdparty.
 """SyncNet-based lip sync scoring for UGC video factory.
 
 Three levels of lip sync evaluation:
