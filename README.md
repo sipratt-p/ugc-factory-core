@@ -153,6 +153,30 @@ Python packages are in `requirements.txt`. The heavy pieces are not pip installs
 - **Voice references**: any 3 to 15 s clip of one speaker. OmniVoice (zero-shot cloning), Qwen3-TTS voices and edge-tts were used to manufacture references when no recording existed; `factory/audio_utils.py::generate_voice_reference` wraps edge-tts.
 - **ffmpeg** with libx264 and the `xfade`, `silencedetect`, `amerge` filters.
 
+### Third-party models and their licences
+
+None of these models or weights is redistributed in this repository: you download each one yourself, under its
+own terms. Several are **non-commercial**, which limits what you can do with the pipeline's output even though the
+code here is MIT.
+
+| Model or tool | Used for | Licence |
+|---|---|---|
+| [LTX-2.3](https://huggingface.co/Lightricks/LTX-2.3) (Lightricks), with its spatial upscaler and distilled LoRA | video and audio generation | LTX-2 Community License Agreement |
+| [ID-LoRA](https://github.com/ID-LoRA/ID-LoRA) | identity LoRA and the two-stage inference script | LTX-2 Community License Agreement |
+| [Gemma 3 12B](https://huggingface.co/google/gemma-3-12b-it) (Google) | LTX-2.3 text encoder | Gemma Terms of Use |
+| [SyncNet](https://github.com/joonson/syncnet_python) (Joon Son Chung) | lip-sync gate | MIT (code adapted here; see `LICENSE-thirdparty`) |
+| [InsightFace](https://github.com/deepinsight/insightface) `buffalo_l` | face detection and ArcFace identity | code MIT; **models non-commercial research only** (commercial licensing from InsightFace) |
+| [NISQA](https://github.com/gabrielmittag/NISQA) | speech quality | code MIT; **weights CC BY-NC-SA 4.0 (non-commercial)** |
+| [SpeechBrain ECAPA](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb) | speaker similarity | Apache-2.0 |
+| [UTMOS via SpeechMOS](https://github.com/tarepan/SpeechMOS) | speech naturalness | MIT |
+| [LPIPS](https://github.com/richzhang/PerceptualSimilarity) | temporal consistency | BSD-2-Clause |
+| [RAFT](https://github.com/pytorch/vision) (torchvision) | optical flow | BSD-3-Clause |
+| [DINOv2](https://github.com/facebookresearch/dinov2) (Meta) | identity drift | Apache-2.0 |
+| [pyiqa / IQA-PyTorch](https://github.com/chaofengc/IQA-PyTorch) (TOPIQ, MUSIQ), optional | image quality in `rescore_all.py` | **PolyForm Noncommercial 1.0.0** |
+| [LAION-CLAP](https://github.com/LAION-AI/CLAP), optional | audio-text similarity | CC0-1.0 |
+| [Whisper](https://github.com/openai/whisper) / WhisperX | transcription fallback | MIT / BSD-2-Clause |
+| [Qwen-Image-2512](https://huggingface.co/Qwen/Qwen-Image-2512), optional | persona stills | Apache-2.0 |
+
 Hardware context: developed on a two-GPU workstation with generation on GPU 0 and all scorers on GPU 1. Nothing prevents a single-GPU run; set the four `UGC_*_GPU` variables to 0 and expect K=2 candidates to run sequentially.
 
 ## Lessons learned
